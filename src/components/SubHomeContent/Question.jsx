@@ -12,7 +12,10 @@ const Question = () => {
         minHeight: "50vh",
         width: "100%",
         position: "sticky",
-        overflowY: 'auto'
+        overflowY: 'auto',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
       }}
     >
       <Stack justifyContent={"center"} alignItems={"center"}>
