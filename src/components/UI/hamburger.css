@@ -1,6 +1,12 @@
-.mobile-menu {
-  display: none;
+
+.header_link {
+  text-decoration: none;
+  color: black;
+  border-bottom: 0.1rem solid transparent;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
+
 
 @media screen and (max-width: 600px) {
   .bm-burger-button {
@@ -43,7 +49,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background: white;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }

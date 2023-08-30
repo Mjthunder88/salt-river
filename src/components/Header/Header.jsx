@@ -1,18 +1,24 @@
 import { Link } from "react-router-dom";
 import { Button, Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
+import { useMediaQuery } from "react-responsive";
 
 import Hamburger from "./Hamburger";
 
-
-
 const Header = () => {
+  const mobileView = useMediaQuery({ query: "(max-width: 600px)" });
+
   return (
     <>
-      <Hamburger />
+      {mobileView && <Hamburger />}
       <Container
         maxWidth="xl"
-        sx={{ paddingTop: "1em", zIndex: 1, position: "absolute", display: {xs: 'none', sm: 'initial'}}}
+        sx={{
+          paddingTop: "1em",
+          zIndex: 1,
+          position: "absolute",
+          display: { xs: "none", sm: "initial" },
+        }}
       >
         <Grid container columnSpacing={2} justifyContent={"flex-end"}>
           <Grid item>
