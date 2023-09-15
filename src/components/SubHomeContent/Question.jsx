@@ -2,12 +2,13 @@ import React from "react";
 
 import { Box, Stack, Typography, Button } from "@mui/material";
 import stickyBackground from "../../Assets/Background-photos/background-sub.jpg";
+import altStick from "../../Assets/Background-photos/10.jpg"
 
 const Question = () => {
   return (
     <Box
       sx={{
-        background: `url(${stickyBackground})`,
+        background: `url(${altStick})`,
         backgroundSize: "cover",
         minHeight: "50vh",
         width: "100%",
@@ -15,7 +16,7 @@ const Question = () => {
         overflowY: 'auto',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
       }}
     >
       <Stack justifyContent={"center"} alignItems={"center"}>

@@ -6,6 +6,11 @@ import miniPhoto1 from "../Assets/mini-photos/mini-photo-1.jpg";
 import miniPhoto2 from "../Assets/mini-photos/mini-photo-2.jpg";
 import miniPhoto3 from "../Assets/mini-photos/mini-photo-3.jpg";
 
+import alt from "../Assets/Background-photos/7.jpg"
+import alt2 from "../Assets/Background-photos/46.jpg"
+import alt3 from "../Assets/Background-photos/28.jpg"
+
+
 import Question from "../components/SubHomeContent/Question";
 
 const paperStyles = {
@@ -18,8 +23,10 @@ const paperStyles = {
   margin: '2em 0',
   fontSize: "2em",
   color: "white",
-  flex: {sm: 'calc(70% - 300px)', md: 'calc(70% - 300px)', lg: 'calc(20% - 300px)', xl: 'calc(30% - 300px)'}
+  flex: {sm: 'calc(70% - 300px)', md: 'calc(70% - 300px)', lg: 'calc(20% - 300px)', xl: 'calc(30% - 300px)'},
+  position: "relative"
 };
+
 
 const HomeScreen = () => {
   return (
@@ -27,7 +34,7 @@ const HomeScreen = () => {
       <Container
         maxWidth="disabled"
         sx={{
-          background: `url(${bannerMain})`,
+          background: `url(${alt})`,
           backgroundSize: "cover",
           height: "100vh",
         }}
@@ -71,7 +78,7 @@ const HomeScreen = () => {
         <Paper
           sx={[
             paperStyles,
-            { background: `url(${miniPhoto2}) `, backgroundSize: "cover" },
+            { background: `url(${alt3}) `, backgroundSize: "cover"  },
           ]}
         >
           <Typography variant="h4">Services</Typography>
@@ -79,7 +86,7 @@ const HomeScreen = () => {
         <Paper
           sx={[
             paperStyles,
-            { background: `url(${miniPhoto3})`, backgroundSize: "cover" },
+            { background: `url(${alt2})`, backgroundSize: "cover" },
           ]}
         >
           <Typography variant="h4">Social</Typography>
