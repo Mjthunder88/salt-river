@@ -22,27 +22,37 @@ const Header = () => {
       >
         <Grid container columnSpacing={2} justifyContent={"flex-end"}>
           <Grid item>
-            <Button variant="outlined" size="small">
-              Home
-            </Button>
+            <Link to="/">
+              <Button variant="outlined" size="small">
+                Home
+              </Button>
+            </Link>
           </Grid>
           <Grid item>
-            <Button variant="outlined" size="small">
-              About
-            </Button>
+            <Link to="/about">
+              <Button variant="outlined" size="small">
+                About
+              </Button>
+            </Link>
           </Grid>
           <Grid item>
-            <Button variant="outlined" size="small">
-              Services
-            </Button>
+            <Link to="/services">
+              <Button variant="outlined" size="small">
+                Services
+              </Button>
+            </Link>
           </Grid>
           <Grid item>
-            <Button variant="outlined" size="small">
-              Contacts
-            </Button>
+            <Link to="/contact">
+              <Button variant="outlined" size="small">
+                Contacts
+              </Button>
+            </Link>
           </Grid>
           <Grid item>
-            <Button variant="contained">Portfolio</Button>
+            <Link to="/portfolio">
+              <Button variant="contained">Portfolio</Button>
+            </Link>
           </Grid>
         </Grid>
       </Container>
